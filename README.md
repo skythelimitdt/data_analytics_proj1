@@ -13,3 +13,5 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
   -The datafield we created included 89% of the World's Energy Production and Consumption
 # We created top10_country_consumption and top10_country_production dataframes
 # We created top_countries_renewable_consumption based on 11 countries that covered 75% of World's Renewable Energy Consumption and 71% of the World's Energy Production
+
+![Energy Production and Consumption Over Years](Resources/e_topcountryrnw.png)
