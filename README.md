@@ -44,7 +44,7 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 ![Projected Renewable Energy Next 50 Years](Resources/e_projected_ren-energy_cons.png)
 
  - Calculated projected percentage change in renewable energy consumption in 2072: 201.83%
- - 
+   
 #Found projected values for non-renewables energy consumption and created dataframe
 
 #Merged data frames for both projected values and plotted a pie chart to show projected energy consumption values for 2072
