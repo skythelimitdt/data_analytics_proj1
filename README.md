@@ -34,7 +34,7 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 
  We made a dataframe including only data through 2018 because the US didn’t have any GDP data beyond that year and we needed that data specifically for one of our questions.
 
- What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
+ # What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
 
  We chose three different years, nearly a decade apart each, to plot the energy consumption per capita and the energy production per capita for each country in that year. 
 
@@ -105,13 +105,13 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 ![Regression Analysis GDP and Renewable Energy Consumption](Resources/a_gdp_renewables_regression.png)
 
 
-  - Correlation Coefficient: 0.79
-  - T-statistic: 20.76401788304955
-  - p-value: 1.2461860989954291e-81
-  - ANOVA for Renewables Consumption:
-  - F_onewayResult(statistic = 0.31264537493261196, p value = 0.9777430943553933)
-  - ANOVA for GDP
-  - F_onewayResult(statistic = 0.14436975081836945, p value = 30.9990640510303093)
+    Correlation Coefficient: 0.79
+    T-statistic: 20.76401788304955
+    p-value: 1.2461860989954291e-81
+    ANOVA for Renewables Consumption:
+    F_onewayResult(statistic = 0.31264537493261196, p value = 0.9777430943553933)
+    ANOVA for GDP
+    F_onewayResult(statistic = 0.14436975081836945, p value = 30.9990640510303093)
 
 - The correlation coefficient of 0.79 suggests that GDP and renewable energy consumption have a strong positive correlation. This indicates increases in GDP correlates to increases in renewables consumption. The positive T-statistic and the very small p-value suggests there is a statistically significant positive difference between GDP and renewables energy consumption across the countries in our dataset. 
 
