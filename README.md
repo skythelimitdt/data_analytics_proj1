@@ -32,11 +32,11 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 ![Energy Consumption in 2022](Resources/e_topcountryrnw.png)
 
 
-# We made a dataframe including only data through 2018 because the US didn’t have any GDP data beyond that year and we needed that data specifically for one of our questions.
+ We made a dataframe including only data through 2018 because the US didn’t have any GDP data beyond that year and we needed that data specifically for one of our questions.
 
-# What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
+ What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
 
-# We chose three different years, nearly a decade apart each, to plot the energy consumption per capita and the energy production per capita for each country in that year. 
+ We chose three different years, nearly a decade apart each, to plot the energy consumption per capita and the energy production per capita for each country in that year. 
 
 ![Energy Consumption and Production per Capita 1995](Resources/a_per_capita_countries1995.png)
 
@@ -56,31 +56,31 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 
 ![Correlation of Energy Consumption Per Capita and Energy Production Per Capita](Resources/a_per_capita_regression.png)
 
-- Correlation Coefficient: 0.79
-- r^2 :  0.62
-- T-statistic: 5.296761358343689
-- p-value: 1.3704128715598114e-07
-- ANOVA for Energy Consumption Per Capita from 2008-2018:
-- F_onewayResult(statistic = 0.014319448497051985, p value = 0.9999999844247471)
-- ANOVA for Energy Production Per Capita from 2008-2018:
-- F_onewayResult(statistic = 0.04569316056743195, p value = 0.9999954920296542)
+  - Correlation Coefficient: 0.79
+  - r^2 :  0.62
+  - T-statistic: 5.296761358343689
+  - p-value: 1.3704128715598114e-07
+  - ANOVA for Energy Consumption Per Capita from 2008-2018:
+  - F_onewayResult(statistic = 0.014319448497051985, p value = 0.9999999844247471)
+  - ANOVA for Energy Production Per Capita from 2008-2018:
+  - F_onewayResult(statistic = 0.04569316056743195, p value = 0.9999954920296542)
 
-# The correlation coefficient of 0.79 suggests that the energy consumption per capita and energy production per capita are strongly correlated. The r^2 value of 0.62 shows moderate to strong association between the consumption and production, but since 38% of the variability is still unexplained there is potential for further modeling. The positive T-statistic and the very small p-value suggests there is a statistically significant positive difference between energy production per capita and energy consumption per capita across the countries in our dataset. This suggests that energy production per capita exceeds energy consumption per capita across countries we looked at.  
+ The correlation coefficient of 0.79 suggests that the energy consumption per capita and energy production per capita are strongly correlated. The r^2 value of 0.62 shows moderate to strong association between the consumption and production, but since 38% of the variability is still unexplained there is potential for further modeling. The positive T-statistic and the very small p-value suggests there is a statistically significant positive difference between energy production per capita and energy consumption per capita across the countries in our dataset. This suggests that energy production per capita exceeds energy consumption per capita across countries we looked at.  
 
-# This could possibly mean certain regions rely on energy imports and others produce excess to fill that need, or perhaps different countries have better production efficiency or different energy needs. 
+ This could possibly mean certain regions rely on energy imports and others produce excess to fill that need, or perhaps different countries have better production efficiency or different energy needs. 
 
-# The ANOVA results with f-statistics both very low and the p values extremely high indicate that energy consumption per capita and energy production per capita have been relatively stable across the years 2008-2018. 
+ The ANOVA results with f-statistics both very low and the p values extremely high indicate that energy consumption per capita and energy production per capita have been relatively stable across the years 2008-2018. 
 
 
 # Is There a Correlation Between Renewable Energy Consumption and GDP Across Countries
 
-# We calculated the average GDP and Average Renewable Energy Consumption for countries across the years and plotted the information.
+ We calculated the average GDP and Average Renewable Energy Consumption for countries across the years and plotted the information.
 
 ![Average GDP and Average Renewable Energy Consumption 1985-2018](Resources/a_avg_gdp_rens_line.png)
 
 -This graph shows similar shapes in the lines of Average GDP and Average Renewables Energy Consumption 
 
-# We chose the top six countries for overall energy consumption and plotted GDP and renewable energy consumption for each of them from 1985-2018
+ We chose the top six countries for overall energy consumption and plotted GDP and renewable energy consumption for each of them from 1985-2018
 
 
 ![GDP and Energy Consumption United States, China and Russia (1985-2018)](Resources/a_gdp_rens_countries1.png)
@@ -105,19 +105,19 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 ![Regression Analysis GDP and Renewable Energy Consumption](Resources/a_gdp_renewables_regression.png)
 
 
-- Correlation Coefficient: 0.79
-- T-statistic: 20.76401788304955
-- p-value: 1.2461860989954291e-81
-- ANOVA for Renewables Consumption:
-- F_onewayResult(statistic = 0.31264537493261196, p value = 0.9777430943553933)
-- ANOVA for GDP
-- F_onewayResult(statistic = 0.14436975081836945, p value = 30.9990640510303093)
+  - Correlation Coefficient: 0.79
+  - T-statistic: 20.76401788304955
+  - p-value: 1.2461860989954291e-81
+  - ANOVA for Renewables Consumption:
+  - F_onewayResult(statistic = 0.31264537493261196, p value = 0.9777430943553933)
+  - ANOVA for GDP
+  - F_onewayResult(statistic = 0.14436975081836945, p value = 30.9990640510303093)
 
-# The correlation coefficient of 0.79 suggests that GDP and renewable energy consumption have a strong positive correlation. This indicates increases in GDP correlates to increases in renewables consumption. The positive T-statistic and the very small p-value suggests there is a statistically significant positive difference between GDP and renewables energy consumption across the countries in our dataset. 
+- The correlation coefficient of 0.79 suggests that GDP and renewable energy consumption have a strong positive correlation. This indicates increases in GDP correlates to increases in renewables consumption. The positive T-statistic and the very small p-value suggests there is a statistically significant positive difference between GDP and renewables energy consumption across the countries in our dataset. 
 
-# The ANOVA results with f-statistics both very low and the p values extremely high indicate that GDP and renewables energy consumption have been relatively stable across the years 2008-2018. 
+- The ANOVA results with f-statistics both very low and the p values extremely high indicate that GDP and renewables energy consumption have been relatively stable across the years 2008-2018. 
 
-# This positive correlation between GDP and Renewables Energy Consumption supports our hypothesis that these variables are positively correlated. This strong positive correlation could imply that as countries become wealthier they may also be more conscious of climate change and sustainability. Perhaps wealthier countries are more likely to invest in renewable energy sources. They may have more technological advancements, government policies to require/incentivise use of renewable energy, or financial capacity to invest in such sources. 
+- This positive correlation between GDP and Renewables Energy Consumption supports our hypothesis that these variables are positively correlated. This strong positive correlation could imply that as countries become wealthier they may also be more conscious of climate change and sustainability. Perhaps wealthier countries are more likely to invest in renewable energy sources. They may have more technological advancements, government policies to require/incentivise use of renewable energy, or financial capacity to invest in such sources. 
 
 
 # To show "energy production and consumption fluctuations correlate with major events", we followed below steps:
@@ -168,15 +168,15 @@ Stability over Time: The per capita energy consumption has remained relatively s
 
 # REFERENCES 
 
-Ritchie, H., Rosado, P., Mathieu, E., & Roser, M (2023). Our World in Data: Energy dataset. Our World in Data. Retrieved from: [https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption/data]
-  """
-Energy Institute - Statistical Review of World Energy (2024) [https://www.energyinst.org/statistical-review/]
-  """
-Ember - Yearly Electricity Data (2024) [https://ember-climate.org/data-catalogue/yearly-electricity-data/]; Energy Institute - Statistical Review of World Energy (2024) [https://www.energyinst.org/statistical-review/]
-  """
-Population based on various sources (2023) [https://ourworldindata.org/population-sources]
-  """
-U.S. Energy Information Administration - International Energy Data (2023) [https://www.eia.gov/opendata/bulkfiles.php]
+- Ritchie, H., Rosado, P., Mathieu, E., & Roser, M (2023). Our World in Data: Energy dataset. Our World in Data. Retrieved from: [https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption/data]
+  
+- Energy Institute - Statistical Review of World Energy (2024) [https://www.energyinst.org/statistical-review/]
+ 
+- Ember - Yearly Electricity Data (2024) [https://ember-climate.org/data-catalogue/yearly-electricity-data/]; Energy Institute - Statistical Review of World Energy (2024) [https://www.energyinst.org/statistical-review/]
+ 
+- Population based on various sources (2023) [https://ourworldindata.org/population-sources]
+  
+- U.S. Energy Information Administration - International Energy Data (2023) [https://www.eia.gov/opendata/bulkfiles.php]
   
 
 
