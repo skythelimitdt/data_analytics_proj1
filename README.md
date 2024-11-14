@@ -149,8 +149,9 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 ![Total Energy Production Per Capita Over Time by Continent](/Resources/production_plot_1b.png)
 
 # We made a scatter plot to see correlation value between total_production_per_capita and total_consumption_per_capita. 
+![Scatter Plot of Total Energy Cons Prod Per Capita by Continent](/Resources/Scatter_plot_by_continents.png)
 
-![Scatter Plot of Total Energy Production vs Total Energy Consumption Per Capita by Continent](/Resources/Scatter Plot of Total Energy Production vs Consumption Per Capita by Continent.png)
+
 
 # We calculated the correalation value 
 - The correlation value between total energy consumption per capita and total energy production per capita is 0.93, which indicates a strong positive correlation. 
@@ -177,7 +178,8 @@ Stability over Time: The per capita energy consumption has remained relatively s
 - Population based on various sources (2023) [https://ourworldindata.org/population-sources]
   
 - U.S. Energy Information Administration - International Energy Data (2023) [https://www.eia.gov/opendata/bulkfiles.php]
-  
+
+- International Renewable Energy Agency (IRENA)-Renewable energy statistics (2023) [https://www.irena.org/Publications/2023/Jul/Renewable-energy-statistics-2023]
 
 
 
