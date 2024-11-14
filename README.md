@@ -7,15 +7,47 @@
 # Once data is reviewed, we created some additional columns: non_renewables_consumption, Total Energy Consumption, non_renewables_production, Total Energy Production,
 non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_capita, total_cons_per_capita
 # Displayed all data fields and their count
-# We created countries_world_energy_df dataframe based on iso_code not equal to 0. Then we locked the data fields to >= 1980. So we can look at about 40 years of data
+# We created countries_world_energy_df dataframe based on iso_code not equal to 0. Then we locked the data fields to >= 1985. So we can look at about 40 years of data
 # We created top_countries data field based on:
   -Sorted countries_world_energy_df dataframe by Total Energy Production and Total Energy Consumption to find the top countries to include in the dataframe
   -The datafield we created included 89% of the World's Energy Production and Consumption
 # We created top10_country_consumption and top10_country_production dataframes
-# We created top_countries_renewable_consumption based on 11 countries that covered 75% of World's Renewable Energy Consumption and 71% of the World's Energy Production
+# We created top_countries_renewable_cons and top_countries_renewable_prod that represented 80% of World's Renewable Energy Consumption and 77% of the World's Renewable Energy Production
+# We created a dataframe filt_countries_world_energy for 2022 which is the last reported year with all production and consumption data
+# Created a pie graph to show renewable energy consumption categories in 2022
+![Renewable Energy Consumption in 2022](Resources/e_renewable_energy.png)
 
-![Energy Production and Consumption Over Years](Resources/e_topcountryrnw.png)
+# Created a pie graph to show non-renewable energy consumption categories in 2022
+![Non-Renewable Energy Consumption in 2022](Resources/e_non-renewable_consumption.png)
 
+# Created a pie graph for renewable vs non-renewable energy consumption to see the current outlook
+![Energy Consumption in 2022](Resources/e_topcountryrnw.png)
+
+
+# AMY SECTION
+
+
+
+# To show "energy production and consumption fluctuations correlate with major events", we followed below steps:
+ - Created a line graph for renewable and non renewable energy production and consumption over the years with the major events to see the trends
+![Energy Consumption and Production Trends Over The Years](Resources/e_majorevents.png)
+
+ - Created events dataframe and merged with our main dataframe to include the events we want to analyze. We then created new columns for lagged years as effects of major events may have delayed or lingering impacts
+
+ - Regression analysis with lagged variables
+
+ - Regression results for "energy production and consumption fluctuations correlate with major events" supported the fact that there is a correlation between major events and energy production/consumption values
+
+# To show "projected renewable energy consumption trends for the next 50 years", we followed below steps:
+ - Built a linear regression model and projected future renewable energy consumption levels
+
+![Projected Renewable Energy Next 50 Years](Resources/e_projected_ren-energy_cons.png)
+
+ - Calculated projected percentage change in renewable energy consumption in 2072: 201.83%
+# Found projected values for non-renewables energy consumption and created dataframe
+# Merged data frames for both projected values and plotted a pie chart to show projected energy consumption values for 2072
+
+![Projected Renewable Energy Next 50 Years](Resources/e_projected_energy.png)
 
 # We creataed six continents to expand analysis based on total_production_per_capita and total_consumption_per_capita 
 -We made a hv.plot.line to see Total Energy Consumption/Production Per Capita Over Time by Continent 
