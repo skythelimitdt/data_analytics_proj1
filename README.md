@@ -18,7 +18,7 @@ non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_c
 ![Renewable Energy Consumption in 2022](Resources/e_renewable_energy.png)
 
 #Created a pie graph to show non-renewable energy consumption categories in 2022
-![Non-Renewable Energy Consumption in 2022](Resources/e_non-renewable_consumption.png)
+![Non-Renewable Energy Consumption in 2022](Resources/e_non-renewable-consumption.png)
 
 #Created a pie graph for renewable vs non-renewable energy consumption to see the current outlook
 ![Energy Consumption in 2022](Resources/e_topcountryrnw.png)
