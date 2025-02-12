@@ -23,14 +23,14 @@ Data was collected from Kaggle: [link to data](https://www.kaggle.com/datasets/p
 ## Data Cleanup
   - Filled missing data fields with 0s to ensure consistency
   - Created additional fields for a more comprehensive analysis:
-  -   Non-renewables consumption
-  -   Total energy consumption
-  -   Non-renewables production
-  -   Total energy production
-  -   Non-renewables production per capita
-  -   Total production per capita
-  -   Non-renewables consumption per capita
-  -   Total consumption per capita  
+  -     Non-renewables consumption
+  -     Total energy consumption
+  -     Non-renewables production
+  -     Total energy production
+  -     Non-renewables production per capita
+  -     Total production per capita
+  -     Non-renewables consumption per capita
+  -     Total consumption per capita  
 - The analysis period spanned 1985-2022
 - Renewable energy projections were analyzed for the years 2010-2022
   
@@ -43,13 +43,13 @@ Data was collected from Kaggle: [link to data](https://www.kaggle.com/datasets/p
 **Pie graph showing renewable energy consumption categories for year 2022**
 ![Renewable Energy Consumption in 2022](Resources/e_renewable_energy.png)
 
-**Pie graph showing non-renewable energy consumption categories for year 2022**
+
 ![Non-Renewable Energy Consumption in 2022](Resources/e_non-renewable-consumption.png)
 
-**Pie graph showing renewable and non-renewable energy consumption for year 2022**
+
 ![Energy Consumption in 2022](Resources/e_topcountryrnw.png)
 
- #### What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
+ #### 1. What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
 
  To analyze the relationship between energy production and consumption per capita, we selected three representative years—spanning nearly a decade apart—to compare each country's data. The years chosen were 1995, 2005, and 2018.
 
@@ -86,7 +86,7 @@ Data was collected from Kaggle: [link to data](https://www.kaggle.com/datasets/p
  The ANOVA results with f-statistics both very low and the p values extremely high indicate that energy consumption per capita and energy production per capita have been relatively stable across the years 2008-2018. 
 
 
-#### Is There a Correlation Between Renewable Energy Consumption and GDP Across Countries
+#### 2. Is There a Correlation Between Renewable Energy Consumption and GDP Across Countries
 
  To explore the relationship between renewable energy consumption and GDP, we calculated the average GDP and average renewable energy consumption for countries from 1985 to 2018 and plotted the data.
 
@@ -132,8 +132,33 @@ Data was collected from Kaggle: [link to data](https://www.kaggle.com/datasets/p
 
 - This positive correlation between GDP and Renewables Energy Consumption supports our hypothesis that these variables are positively correlated. This strong positive correlation could imply that as countries become wealthier they may also be more conscious of climate change and sustainability. Perhaps wealthier countries are more likely to invest in renewable energy sources. They may have more technological advancements, government policies to require/incentivise use of renewable energy, or financial capacity to invest in such sources. 
 
+#### 3. Is there a correlation between total energy consumption per capita and total energy production per capita in different continents?
+To explore the relationship between total energy consumption per capita and total energy production per capita across different continents, we grouped the data by continent and conducted a series of analyses.
+ Visualizing Energy Trends:
 
-#### How do energy production and consumption fluctuations correlate with major events?
+We created line plots to visualize total energy consumption per capita and total energy production per capita over time for each continent:
+
+![Total Energy Consumption Per Capita Over Time by Continent](/Resources/consumption_plot_1a.png)
+![Total Energy Production Per Capita Over Time by Continent](/Resources/production_plot_1b.png)
+
+**Correlation Analysis:**
+
+We created a scatter plot to assess the correlation between total energy production per capita and total energy consumption per capita across the continents:
+
+![Scatter Plot of Total Energy Cons Prod Per Capita by Continent](/Resources/Scatter_plot_by_continents.png)
+
+- The correlation coefficient between total energy consumption per capita and total energy production per capita is 0.93, indicating a strong positive correlation.
+
+**Statistical Testing:**
+- T-statistic: -10.633693692517605, p-value: 2.0983809186947106e-22
+- The t-test results indicate a significant difference between total_prod_per_capita and total_cons_per_capita values. Given the negative t-statistic, we can conclude that total_prod_per_capita is significantly lower than total_cons_per_capita in the six_continents data. This finding could imply that, on a per capita basis, production levels are insufficient to meet consumption demands, which might indicate a reliance on energy imports or suggest other factors impacting energy availability and usage across these regions.
+
+F_onewayResult(statistic=0.0066544684672841525, pvalue=0.999999999535522)
+The ANOVA test results indicate that there is no significant difference in total_cons_per_capita across the years 2012 to 2022.
+In practical terms, this suggests:
+Stability over Time: The per capita energy consumption has remained relatively stable across this period, with little to no variation from year to year. 
+
+#### 4. How do energy production and consumption fluctuations correlate with major events?
 
 We created a line graph to visualize the trends in renewable and non-renewable energy production and consumption over the years, incorporating major global events to examine potential correlations.
 
@@ -145,7 +170,7 @@ We created a line graph to visualize the trends in renewable and non-renewable e
 - We then performed regression analysis using the lagged variables to assess how major events might influence energy production and consumption patterns.
 
 
-#### What are the projected renewable energy consumption trends for the next 50 years?
+#### 5. What are the projected renewable energy consumption trends for the next 50 years?
 To project renewable energy consumption trends over the next 50 years, we built a linear regression model and used it to forecast future consumption levels.
 
 ![Projected Renewable Energy Next 50 Years](Resources/e_projected_ren-energy_cons.png)
