@@ -23,14 +23,14 @@ Data was collected from Kaggle: [link to data](https://www.kaggle.com/datasets/p
 ## Data Cleanup
   - Filled missing data fields with 0s to ensure consistency
   - Created additional fields for a more comprehensive analysis:
-  -     Non-renewables consumption
-  -     Total energy consumption
-  -     Non-renewables production
-  -     Total energy production
-  -     Non-renewables production per capita
-  -     Total production per capita
-  -     Non-renewables consumption per capita
-  -     Total consumption per capita  
+  -   Non-renewables consumption
+  -   Total energy consumption
+  -   Non-renewables production
+  -   Total energy production
+  -   Non-renewables production per capita
+  -   Total production per capita
+  -   Non-renewables consumption per capita
+  -   Total consumption per capita  
 - The analysis period spanned 1985-2022
 - Renewable energy projections were analyzed for the years 2010-2022
   
