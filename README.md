@@ -6,33 +6,39 @@
 - Sezer Bozoglan
 
 ## Project Overview
-We chose World Energy Consumption dataset for this project. 
+For this project, we selected the World Energy Consumption dataset to analyze global energy trends and their relationship with various economic and environmental factors.
 
 ### Analysis:
-We answered these questions:
-- What is the relationship between energy production per capita and energy consumption per capita across countries?
-- Is there a correlation between renewable energy consumption and GDP?
-- Is there a correlation between Total Energy Consumption per capita and Total Energy Production per capita in different continents?
-- How do energy production and consumption fluctuations correlate with major events?
-- What are the projected renewable energy consumption trends for the next 50 years based on current data?
+We explored the following questions:
 
+- What is the relationship between energy production per capita and energy consumption per capita across different countries?
+- Is there a correlation between renewable energy consumption and GDP?
+- Is there a correlation between total energy consumption per capita and total energy production per capita across different continents?
+- How do fluctuations in energy production and consumption correlate with major global events?
+- What are the projected renewable energy consumption trends for the next 50 years based on current data?
 
 ## Data Collection
 Data was collected from Kaggle: [link to data](https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption/data)
 
 ## Data Cleanup
-  - Filled all missing fields with 0s
-  - Created additional fields: non_renewables_consumption, Total Energy Consumption, non_renewables_production, Total Energy Production,
-non-renewables_prod_per_capita, total_prod_per_capita, non-renewables_cons_per_capita, total_cons_per_capita
-- Created DataFrames for 'countries' and 'continents'
-- Our analysis range was 1985-2022
-- Renewable energy projections covered 2010-2022
+  - Filled missing data fields with 0s to ensure consistency
+  - Created additional fields for a more comprehensive analysis:
+  -   Non-renewables consumption
+  -   Total energy consumption
+  -   Non-renewables production
+  -   Total energy production
+  -   Non-renewables production per capita
+  -   Total production per capita
+  -   Non-renewables consumption per capita
+  -   Total consumption per capita  
+- The analysis period spanned 1985-2022
+- Renewable energy projections were analyzed for the years 2010-2022
   
 ## Report
-Key Points:
-- Our report analysis looked at Renewable and non-renewable energy data, production and consumption data, countries and continents and GDP. 
-- 37 countries in the data represented about 90% of World's production/consumption so our analysis for World's Energy Consumption and Production was based on these top countries.
-- We created top_countries_renewable_cons and top_countries_renewable_prod that represented 80% of World's Renewable Energy Consumption and 77% of the World's Renewable Energy Production
+**Key Insights:**
+- Our analysis focused on both renewable and non-renewable energy data, covering production and consumption across countries, continents, and their relationship with GDP.
+- 37 countries in the dataset represented approximately 90% of global energy production and consumption, so our findings were primarily based on these countries.
+- We created datasets for top_countries_renewable_cons and top_countries_renewable_prod, which represent 80% of the world’s renewable energy consumption and 77% of global renewable energy production, respectively.
 
 **Pie graph showing renewable energy consumption categories for year 2022**
 ![Renewable Energy Consumption in 2022](Resources/e_renewable_energy.png)
@@ -45,7 +51,7 @@ Key Points:
 
  #### What is the Relationship Between Energy Production Per Capita and Energy Consumption Per Capita Across Countries?
 
- We chose three different years, nearly a decade apart each, to plot the energy consumption per capita and the energy production per capita for each country in that year to see the comparison.
+ To analyze the relationship between energy production and consumption per capita, we selected three representative years—spanning nearly a decade apart—to compare each country's data. The years chosen were 1995, 2005, and 2018.
 
 ![Energy Consumption and Production per Capita 1995](Resources/a_per_capita_countries1995.png)
 
@@ -54,14 +60,13 @@ Key Points:
 ![Energy Consumption and Production per Capita 2018](Resources/a_per_capita_countries2018.png)
 
 
-**These graphs show:**
-- There are few countries that produced the same amount of energy per capita as they consumed per capita. 
-- Several of the countries produced less than they consumed per capita. 
-- Then there are some that produced more energy per capita than they consumed per capita. 
-- Looking at these graphs we see that there is some shift in production and consumption per capita between countries, but the overall shape of the data per capita stays generally  stable throughout the years. It is interesting to note that the graph of 2018 data shows a decrease in production and consumption per capita overall. This could possibly be due to better technology or more global concerns about energy consumption. It definitely merits more research.
+**Key Observations:**
+- Balanced production and consumption: A few countries appear to produce and consume energy at roughly the same rate per capita.
+- Energy deficit: Several countries produce less energy per capita than they consume.
+- Energy surplus: Some countries produce more energy per capita than they consume.
+- Trends over time: While there is some variation between countries, the overall patterns of energy production and consumption per capita remain relatively stable across the years. However, the 2018 graph indicates a decrease in both production and consumption per capita across the board, which could suggest technological improvements or increased global awareness around energy efficiency and sustainability.
 
-**We included 37 countries that represented 90%+ of World's production and consumption**
-
+<br>Let's look at the correlation between energy consumption per capita and energy production per capita: </br>
 
 ![Correlation of Energy Consumption Per Capita and Energy Production Per Capita](Resources/a_per_capita_regression.png)
 
@@ -83,13 +88,13 @@ Key Points:
 
 #### Is There a Correlation Between Renewable Energy Consumption and GDP Across Countries
 
- We calculated the average GDP and Average Renewable Energy Consumption for countries across the years and plotted the information.
+ To explore the relationship between renewable energy consumption and GDP, we calculated the average GDP and average renewable energy consumption for countries from 1985 to 2018 and plotted the data.
 
 ![Average GDP and Average Renewable Energy Consumption 1985-2018](Resources/a_avg_gdp_rens_line.png)
 
--This graph shows similar shapes in the lines of Average GDP and Average Renewables Energy Consumption 
+-The graph illustrates a similar trend between average GDP and average renewable energy consumption, with both variables showing similar shapes across the years.
 
- We chose the top six countries for overall energy consumption and plotted GDP and renewable energy consumption for each of them from 1985-2018
+ We then focused on the top six countries in terms of overall energy consumption and plotted GDP and renewable energy consumption from 1985 to 2018.
 
 **Results for USA, China, Russia:**
 ![GDP and Energy Consumption United States, China and Russia (1985-2018)](Resources/a_gdp_rens_countries1.png)
@@ -97,21 +102,18 @@ Key Points:
 **Results for Japan, India, Germany:**
 ![GDP and Energy Consumption Japan, India, and Germany (1985-2018)](Resources/a_gdp_rens_countries2.png)
 
-**These graphs show:**
+**Key Observations:**
 
-- The United States, China, and India all have GDP and Renewable Energy Consumption lines that generally follow each other in shape. 
-- Russia’s GDP has had minimal changes over time with a slow, but mostly steady increase of GDP since the early 2000’s, and their renewable energy consumption is nearly unchanged over time. 
-- Japan’s renewable energy consumption generally follows the GDP curve, but with more variability and then a steep increase from around 2012 on.
-- Germany’s GDP has had steady growth and their renewable energy consumption followed that  until around 2000 when it started to increase steeply.
-- The United States has the largest gap between GDP and Renewable Energy Consumption, possibly indicating a slower adoption of renewable energy sources.
-- China has had the fastest growth in both GDP and Renewable Energy Consumption
-- Overall we see that the general trend of  increased GDP with increased renewable energy consumption.
+- USA, China, and India show a strong correlation between GDP and renewable energy consumption, with both metrics following similar trends throughout the years.
+- Russia presents a unique case: its GDP has shown minimal fluctuations, with slow but steady growth since the early 2000s. In contrast, renewable energy consumption in Russia has remained largely unchanged over time.
+- Japan's renewable energy consumption generally follows its GDP trend, though with more variability, and shows a significant increase around 2012.
+- Germany demonstrates steady GDP growth, which closely parallels its renewable energy consumption until around 2000, when it began to increase sharply.
+- The United States has the largest gap between GDP and renewable energy consumption, possibly indicating slower adoption of renewable energy technologies.
+- China has experienced the fastest growth in both GDP and renewable energy consumption, reflecting rapid economic expansion and adoption of renewable energy.
+- Overall, the trend suggests that countries with higher GDP tend to consume more renewable energy, supporting our initial hypothesis that wealthier nations are more likely to have the resources, technology, and social pressure to adopt renewable energy.
 
 
-**We included 37 countries that represented 90%+ of World's production and consumption**
-
-- We predicted there would be a positive correlation between GDP and renewable energy consumption because we assumed that more wealthy countries would have the technology and social knowledge/pressure to access and use renewable energy.
-
+<br>Let's see the correlation between GDP and renewable energy consumption:</br>
 
 ![Regression Analysis GDP and Renewable Energy Consumption](Resources/a_gdp_renewables_regression.png)
 
@@ -133,26 +135,26 @@ Key Points:
 
 #### How do energy production and consumption fluctuations correlate with major events?
 
-Created a line graph for renewable and non renewable energy production and consumption over the years with the major events to see the trends
+We created a line graph to visualize the trends in renewable and non-renewable energy production and consumption over the years, incorporating major global events to examine potential correlations.
 
 ![Energy Consumption and Production Trends Over The Years](Resources/e_majorevents.png)
 
- - Created events dataframe and merged with our main dataframe to include the events we want to analyze. We then created new columns for lagged years as effects of major events may have delayed or lingering impacts
+**Analysis Process**
+- We first created an events dataframe and merged it with our main dataset to include the major events we wanted to analyze.
+- To account for the potential delayed effects of major events on energy production and consumption, we created new columns for lagged years.
+- We then performed regression analysis using the lagged variables to assess how major events might influence energy production and consumption patterns.
 
- - Regression analysis with lagged variables
-
- - Regression results for "energy production and consumption fluctuations correlate with major events" supported the fact that there is a correlation between major events and energy production/consumption values
 
 #### What are the projected renewable energy consumption trends for the next 50 years?
-Built a linear regression model and projected future renewable energy consumption levels
+To project renewable energy consumption trends over the next 50 years, we built a linear regression model and used it to forecast future consumption levels.
 
 ![Projected Renewable Energy Next 50 Years](Resources/e_projected_ren-energy_cons.png)
 
-<br>Calculated projected percentage change in renewable energy consumption in 2072: 201.83%
-   
-- Found projected values for non-renewables energy consumption and created dataframe
+**Key Insights:**
 
-- Merged data frames for both projected values and plotted a pie chart to show projected energy consumption values for 2072
+- We calculated the projected percentage change in renewable energy consumption by 2072, estimating a 201.83% increase.
+- Additionally, we forecasted values for non-renewable energy consumption and created a corresponding dataframe.
+- After merging the data frames for both renewable and non-renewable projections, we visualized the projected energy consumption in 2072 with a pie chart.
 
 ![Projected Renewable Energy Next 50 Years](Resources/e_projected_energy.png)
 
